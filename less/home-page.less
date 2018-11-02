@@ -1,0 +1,166 @@
+.home {
+
+  .header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dashed silver;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  .content-section {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .text-content {
+      width: 48%;
+      padding-right: 1%;
+    }
+
+    .img-content {
+      width: 48%;
+      padding-left: 1%;
+
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .inverse-content {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+
+    .text-content {
+      padding-left: 1%;
+      padding-right: 0;
+    }
+
+    .img-content {
+      padding-right: 1%;
+      padding-left: 0;
+    }
+  }
+
+  .content-destination {
+    width: 75%;
+    margin: 0 auto 30px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+    display: flex;
+    justify-content: space-between;
+
+    .destination {
+      width: 30%;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      #sign-me-up > .signing-btn;
+    }
+  }
+}// home
+
+@media only screen and (@mobile) {
+  .home .header {
+    height: auto;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dashed silver;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  .home .content-section {
+    height: auto;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+
+    .text-content {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .img-content {
+      width: 100%;
+      padding-left: 0;
+
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .home .inverse-content {
+    height: auto;
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+
+    .text-content {
+      margin: 10px 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .img-content {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .home .content-destination {
+    width: auto;
+    height: auto;
+    margin: 0 20px 30px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .home .content-pick {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .destination {
+      width: 100%;
+      margin: 10px 0;
+      padding: 0 30px;
+    }
+
+    .btn {
+      #sign-me-up > .signing-btn
+    }
+  }
+}
