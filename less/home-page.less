@@ -4,7 +4,17 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    border-bottom: 2px dashed silver;
+
+    h2 {
+      margin: 25% 5%;
+      z-index: 99;
+      position: absolute;
+      flex-direction: column;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 75px;
+      color: #FFFFFF;
+    }
 
     p {
       margin-bottom: 20px;
@@ -12,11 +22,13 @@
 
     img {
       margin-bottom: 20px;
+      z-index: 0;
+      position: relative;
     }
   }
 
   .content-section {
-    margin: 30px 0;
+    margin: 30px 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -24,6 +36,33 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+
+      h3 {
+        margin: 20px 0;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 20px 0;
+      }
+
+      a {
+        width: 200px;
+        height: 65px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        color: #222222;
+        text-decoration: none;
+        background-color: white;
+        border: 1.3px solid #222222;
+      }
     }
 
     .img-content {
@@ -37,38 +76,124 @@
   }
 
   .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    margin: 30px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // padding-bottom: 30px;
+    // border-bottom: 2px dashed @navigation-border;
 
     .text-content {
+      width: 48%;
       padding-left: 1%;
       padding-right: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+
+      h3 {
+        margin: 20px 0;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 20px 0;
+      }
+
+      a {
+        width: 200px;
+        height: 65px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        color: #222222;
+        text-decoration: none;
+        background-color: white;
+        border: 1.3px solid #222222;
+      }
     }
 
     .img-content {
+      width: 48%;
       padding-right: 1%;
       padding-left: 0;
     }
   }
 
   .content-destination {
-    width: 75%;
+    width: 90%;
     margin: 0 auto 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     img {
-      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      z-index: 0;
+      position: relative;
+    }
+
+    h3 {
+      width: 340px;
+      height: 120px;
+      z-index: 99;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      letter-spacing: 8px;
+      background: #d8d8d8;
+      border: 1px solid white;
+    }
+
+    .the-villas h3, .the-blocks h3 {
+      margin: 20% 63% 40px;
+    }
+
+    .outskirts h3 {
+      margin: 20% .4% 40px;
+    }
+
+    p {
+      width: 40%;
+      margin: 100px 30% 50px;
+      text-align: justify;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    padding: 30px 63px 0;
     display: flex;
     justify-content: space-between;
+    color: #FFFFFF;
+    background-color: #828282;
+
+    .email-us {
+      width: 30%;
+    }
 
     .destination {
-      width: 30%;
+      width: 20%;
       margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h5 {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+      }
+
+      address {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        line-height: 28px;
+      }
     }
 
     .btn {
