@@ -3,44 +3,56 @@
 .navigation {
     width: 100%;
     padding: 10px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    z-index: 99;
     background-color: #99a4b0;
-    border: 1px solid green;
-    border-bottom: 2px dashed silver;
     
-    h1 {
-        font-size: 3rem;
-        color: #FFFFFF;
-    }
-
-    nav {
-        width: 100%;
-        height: 100%;
-        z-index: 99;
+    .nav-bar {
         display: flex;
         justify-content: space-between;
+
+        h1 {
+            font-size: 3rem;
+            color: #FFFFFF;
+        }
     }
 
-    nav a {
-        margin: 0 20px;
-        color: @font-color;
-        font-size: 1.6rem;
-        text-decoration: none;
+    .hidden-menu {
+        height: 100vh;
+        z-index: 95;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin: 0 20px;
+            color: #FFFFFF;
+            line-height: 70px;
+            font-size: 5rem;
+            text-decoration-line: none;
+        }
+
+        a:hover {
+            text-decoration-color: #504545;
+        }
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
 @media only screen and (@mobile) {
     .navigation {
         width: 100%;
-        margin: 10px 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        border-bottom: 2px dashed silver;
+        padding: 10px;
+        position: relative;
+
+        .nav-bar h1 {
+            font-size: 2.4rem;
+        }
+        
     }
 
     .navigation nav {

@@ -6,7 +6,7 @@
 
     h2 {
       margin: 25% 5%;
-      z-index: 99;
+      z-index: 90;
       position: absolute;
       flex-direction: column;
       font-weight: bold;
@@ -79,8 +79,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    // padding-bottom: 30px;
-    // border-bottom: 2px dashed @navigation-border;
 
     .text-content {
       width: 48%;
@@ -139,7 +137,7 @@
     h3 {
       width: 340px;
       height: 120px;
-      z-index: 99;
+      z-index: 80;
       position: absolute;
       display: flex;
       justify-content: center;
@@ -174,6 +172,19 @@
 
     .email-us {
       width: 30%;
+
+      input {
+        width: 100%;
+        height: 44px;
+        padding: 10px;
+        font-size: 1.4rem;
+        border-radius: 4px;
+        border-width: 0;
+      }
+
+      .reassurance {
+        font-size: 1.2rem;
+      }
     }
 
     .destination {
@@ -203,88 +214,154 @@
 
 @media only screen and (@mobile) {
   .home .header {
+    width: 100%;
     height: auto;
-    margin: 0 20px;
     display: flex;
     flex-direction: column;
-    border-bottom: 2px dashed silver;
 
-    p {
-      margin-bottom: 10px;
-    }
-
-    img {
-      margin-bottom: 10px;
+    h2 {
+      margin: 20% 5%;
+      font-size: 36px;
+      line-height: 40px;
     }
   }
 
   .home .content-section {
     height: auto;
-    margin: 30px 20px;
+    margin: 10px 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     .text-content {
       width: 100%;
-      padding-right: 0;
+
+      h3 {
+        margin: 20px 0 10PX;
+        font-size: 2.9rem;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      a {
+        width: 100%;
+        height: 48px;
+        font-size: 1.5rem;
+      }
     }
 
     .img-content {
       width: 100%;
-      padding-left: 0;
-
-      img {
-        border-radius: 10px;
-      }
     }
   }
 
   .home .inverse-content {
     height: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
 
     .text-content {
-      margin: 10px 0;
-      padding-left: 0;
-      padding-right: 0;
+      width: 100%;
+
+      h3 {
+        margin: 20px 0 10PX;
+        font-size: 2.9rem;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      a {
+        width: 100%;
+        height: 48px;
+        font-size: 1.5rem;
+      }
     }
 
     .img-content {
-      padding-right: 0;
-      padding-left: 0;
+      width: 100%;
     }
   }
 
   .home .content-destination {
-    width: auto;
-    height: auto;
-    margin: 0 20px 30px;
+    width: 100%;
+    margin: 0 0 10px;
 
-    img {
-      border-radius: 10px;
+    h3 {
+      width: 90%;
+      height: 90px;
+      z-index: 80;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      letter-spacing: 8px;
+      background: #d8d8d8;
+      border: 1px solid white;
+    }
+
+    .the-villas h3, .the-blocks h3 {
+      margin: 20% 5% 20px;
+    }
+
+    .outskirts h3 {
+      margin: 20% 5% 20px;
+    }
+
+    p {
+      width: 90%;
+      margin: 100px 5% 10px;
+      text-align: justify;
     }
   }
 
   .home .content-pick {
-    width: auto;
-    height: auto;
-    margin: 0 20px;
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    padding: 30px 15px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    color: #FFFFFF;
+    background-color: #828282;
+
+    .email-us {
+      width: 100%;
+      
+      h4 {
+        margin-bottom: 0;
+        font-size: 1.6rem;
+      }
+
+      .invitation {
+        line-height: 14px;
+      }
+
+      input {
+        width: 100%;
+        height: 54px;
+        padding: 10px;
+        font-size: 1.4rem;
+        border-radius: 4px;
+        border-width: 0;
+      }
+    }
 
     .destination {
       width: 100%;
       margin: 10px 0;
-      padding: 0 30px;
-    }
 
-    .btn {
-      #sign-me-up > .signing-btn
+      h5 {
+        margin-bottom: 10px;
+        font-size: 2.3rem;
+        font-weight: bold;
+      }
+
+      address {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        line-height: 30px;
+      }
     }
   }
 }
